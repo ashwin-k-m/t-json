@@ -1,0 +1,39 @@
+its just uses array and objects like json, where memory can be saved by not saving duplicate values.
+the concept is like the main structure will be in key value pair, and key will be a unique number which act as a base address.
+then in value the data is stored in array as character by character and for where is gets 
+completed it have a uniqueid at start and have value where it starts with _. it use the concept from trie and merge with json,
+we can access the data with key address and using uniqueid in front the complete data to access it. 
+for eg {"12":['b','a','123_t','124_h'],"13":['d','1230o']} where it stores values like bat,bath,
+do and we can acess bat and bath from single value while saving space and have a mode of access. 
+it will be userfull when handling big datas not for small ones.
+
+in the above eg 123,124 are unique id and _ is a break point to sort out the data from id.
+
+{
+  "12": ['b','a','123_t','124_h'],
+  "13": ['d','123_o']
+}
+
+🔹 Prompt: Hybrid Trie-Like Key-Value Storage System
+🔹 Concept Overview
+The goal is to create a memory-efficient data storage system inspired by Trie and JSON-like structures,
+ optimized for handling large datasets. The system:
+
+Uses key-value storage where the key acts as a base address.
+Reduces memory usage by storing shared prefixes only once.
+Uses a unique identifier (ID) per word for efficient retrieval.
+Allows insertion, retrieval, deletion, and updates of words.
+Supports saving/loading data in localStorage (Web) and JSON files (Native Devices).
+
+🔹 Data Structure Explanation
+Data is stored in key-value format ({baseAddress: [values]}).
+The baseAddress is derived from the first two letters of a word.
+Each word gets a unique ID (id_) to differentiate entries.
+Words sharing the same prefix are stored efficiently.
+
+Feature	  | Description
+Insertion	Adds a word to storage with a unique ID.
+Retrieval	Fetches a word using base address + unique ID.
+Update	    Modifies an existing word while keeping the same unique ID.
+Deletion	Removes a word using its base address + unique ID.
+Save/Load	Saves and retrieves data from localStorage (Web) or JSON files (Native Devices).

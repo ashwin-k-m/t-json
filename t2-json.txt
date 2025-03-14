@@ -1,0 +1,18 @@
+something like this {'b':[{'a':[{'12_t':['121_h','122_s']}]}]}
+
+🔹 This representation maintains a hierarchical structure, where:
+
+Each character is a key in an object.
+Instead of an array, an object or nested array holds words.
+Unique IDs (12_t) identify words, and suffixes (121_h, 122_s) store variants like "hat" and "has".
+🔹 Benefits of This Approach
+✅ More hierarchical & closer to Trie.
+✅ Reduces redundancy by reusing common prefixes.
+✅ More structured retrieval.
+
+🔹 Comparison with Previous Method
+Feature	          | JSON Trie ({ "ba": ["12_bat", "13_bath"] })	| Nested Trie ({ "b": [{ "a": [{ "12_t": ["121_h", "122_s"] }] }] })
+Data Compression	Moderate (Base-addressed JSON)	              High (Strict prefix hierarchy)
+Lookups	            Faster (Direct key lookup)	                  Slightly slower (Nested traversal)
+Flexibility	        Can store varied words	                      Best for prefix-based words
+Memory              Use	Efficient, but some redundancy	          Highly efficient (No duplicate storage)
