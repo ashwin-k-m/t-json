@@ -14,8 +14,7 @@ in the above eg 123,124 are unique id and _ is a break point to sort out the dat
   "13": ['d','123_o']
 }
 
-🔹 Prompt: Hybrid Trie-Like Key-Value Storage System
-🔹 Concept Overview
+🔹Hybrid Trie-Like Key-Value Storage System Concept Overview :
 The goal is to create a memory-efficient data storage system inspired by Trie and JSON-like structures,
  optimized for handling large datasets. The system:
 
