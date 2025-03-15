@@ -90,5 +90,4 @@ This hybrid Trie-inspired structure offers a scalable, space-efficient alternati
 
 ---
 
-Would you like further refinements or an implementation guide for a specific language?
 
