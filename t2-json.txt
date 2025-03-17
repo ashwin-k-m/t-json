@@ -1,4 +1,4 @@
-something like this {'b':[{'a':[{'12_t':[{'121_h':[]},{'122_s':[]}]}]}]}
+it looks something like this {'b':[{'a':[{'12_t':[{'121_h':[]},{'122_s':[]}]}]}]}
 
 🔹 This representation maintains a hierarchical structure, where:
 
